@@ -31,7 +31,7 @@ int main() {
 
 /*
   #include<string.h>
-  strlen(str) // 문자열 길이 구함aa
+  strlen(str) // 문자열 길이 구함a
 
 */
 }
