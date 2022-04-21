@@ -20,5 +20,7 @@ int main(void) {
 /*
 Defining Structures
 
-Member variables can be any basic types (int, char, etc). They can also be derived types like arrays, pointers, and even other structures. It’s important to note that the member variables should only be declared and not initialized.
+Member variables can be any basic types (int, char, etc). 
+They can also be derived types like arrays, pointers, and even other structures. 
+It’s important to note that the member variables should only be declared and not initialized.
 */
