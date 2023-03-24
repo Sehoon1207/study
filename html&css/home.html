@@ -34,6 +34,40 @@
     - <meta charset="utf-8"/>     글자형식
         
 -->
+<!-- 
+  **CSS(Cascading Style Sheets)
+
+CSS는 browser에게 웹사이트의 그 content가 어떻게 보여야 하는지에 대해 알려준다
+ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야.....근육
+
+  1. CSS를 추가하는 방법 두가지
+    - inline CSS: html파일 하나에 css코드를 추가한다
+    - external CSS: html파일 외에 css파일을 따로 만든다.
+
+  2. inline과 block
+
+    - 요소들 중 우측으로 계속해서 붙는 것을 inline( span link image 등)
+    - 요소들 중 아래로 붙는것을 block, 오른쪽에 더 붙지 않음 ( 대부분의 box 예. div 종류)
+    ** inline은 높이와 너비를 설정 할 수 없다 <-> block은 높이와 너비 설정 가능.
+
+  3. margin border padding
+    - margin : box의 border(경계)의 바깥의 공간
+              ex) margin: 0;
+                  
+                  margin-top: 0;
+                  margin-right: 0;
+                  margin-bottom: 0;
+                  margin-left: 0;
+
+                  margin: top, right, bottom, left; << 시계방향으로 숫자만 나열해도 됨
+      ** collapsing margins:위아래 경계가 같은 박스는 동일하게 마진을 처리해 버린다.
+                  이 현상을 수정하기 위해서는 padding을 이용해야한다.
+
+    - border
+    - padding : box의 경계의 안쪽의 공간
+
+ -->
+
 <!DOCTYPE html>
 <html lang="kr">
   <head>
@@ -57,9 +91,70 @@
         <meta name="twitter:title" content="sehoon oh">
         또한 페북이나 트위터 정보도 담을 수 있음
     -->
+
+    <!-- -------------------------여기서부터 css/style 부분이다--------------------------------- -->
+
+    <link href="styles.css" rel="stylesheet" />
+    <!-- 
+      link를 이용해서 외부 파일인 .css를 연결할 수도 있다. 
+      대신 관계(rel=relationship)를 명시해야함.
+    -->
+    <style>
+      html {
+        background-color: gray;
+      }
+      /* html을 지정하면 페이지 전체에 해당하는 속성을 지정할 수 있다. */
+      header {
+        padding: 20px;
+        background-color: rgb(233, 233, 233);
+      }
+      #first {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+      }
+      #second {
+        height: 70px;
+        width: 70px;
+        background-color: coral;
+      }
+      #third {
+        height: 40px;
+        width: 40px;
+        background-color: deeppink;
+      }
+      /* id를 가리키는 방법은  #(id이름)이다 */
+
+      h1 {
+        color: tomato;
+        font-weight: 1000;
+        font-size: 20px;
+        font-style: bold;
+      }
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: rgb(255, 255, 255);
+      }
+
+      /* 프로퍼티 display는 block과 inline 속성을 변경 가능하다*/
+      address {
+        text-align: center;
+        color: gray;
+      }
+    </style>
+    <!-- style태그는 css를 따로두지 않고 html파일에 추가하는 것 -->
+
+    <!-- -------------------------css/style end--------------------------------- -->
   </head>
+
   <body>
     <header>
+      <div id="first">
+        <div id="second">
+          <div id="third"></div>
+        </div>
+      </div>
       <h1>Hello this is my webseite!</h1>
       <!-- 태그인 header는 div id="header"와 같은 의미이다. 예전에는 그렇게 사용했었다. 
         실질적으로는 div와 같은 의미지만 구조체를 더 쉽게 이해 가능하게 해준다.
@@ -140,22 +235,24 @@
         <!-- span은 짧은 text를 위한 태그 (cf. 태그 p 의 경우는 긴 text)-->
       </span>
 
-      <ul>
-        <!-- ul : unordered list (순서가 없는 리스트) -->
-        <li>beer</li>
-        <!-- li : list Item 리스트 안에 들어가는 아이템 각각 지정 -->
-        <li>김치</li>
-        <li>meat</li>
-        <li>milk</li>
-      </ul>
+      <div id="lists">
+        <ul>
+          <!-- ul : unordered list (순서가 없는 리스트) -->
+          <li>beer</li>
+          <!-- li : list Item 리스트 안에 들어가는 아이템 각각 지정 -->
+          <li>김치</li>
+          <li>meat</li>
+          <li>milk</li>
+        </ul>
 
-      <ol>
-        <!-- ul : ordered list (순서가 있는 리스트) -->
-        <li>beer</li>
-        <li>김치</li>
-        <li>meat</li>
-        <li>milk</li>
-      </ol>
+        <ol>
+          <!-- ul : ordered list (순서가 있는 리스트) -->
+          <li>beer</li>
+          <li>김치</li>
+          <li>meat</li>
+          <li>milk</li>
+        </ol>
+      </div>
 
       <a href="http://www.google.com" target="_self">Go to google.com</a>
       <!-- 
@@ -203,8 +300,7 @@
 
     <footer>
       <!-- 태그인 footer는 div id="footer"와 같은 의미이다. 예전에는 그렇게 사용했었다. 꼬리말을 담당한다-->
-      <address>000 Moabit berlin 10555</address>
-      &copy; 2023 S.H.
+      <address>000 Moabit berlin 10555<br />&copy; 2023 S.H.</address>
     </footer>
   </body>
 </html>
