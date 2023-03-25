@@ -60,11 +60,14 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
                   margin-left: 0;
 
                   margin: top, right, bottom, left; << 시계방향으로 숫자만 나열해도 됨
+
+                  ** inline도 변경 가능하지만 좌우에만 적용된다.
+
       ** collapsing margins:위아래 경계가 같은 박스는 동일하게 마진을 처리해 버린다.
                   이 현상을 수정하기 위해서는 padding을 이용해야한다.
 
-    - border
-    - padding : box의 경계의 안쪽의 공간
+    - border  : box의 경계선. inline에도 border는 있다. 몇가지 스타일이 있지만 별로임..
+    - padding : box의 경계의 안쪽의 공간. inline에 높이도 적용된다.
 
  -->
 
@@ -100,6 +103,10 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
       대신 관계(rel=relationship)를 명시해야함.
     -->
     <style>
+      * {
+        border: 1px dashed black;
+      }
+      /* 태그 *은 모든 요소를 말함 */
       html {
         background-color: gray;
       }
@@ -109,6 +116,7 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         background-color: rgb(233, 233, 233);
       }
       #first {
+        border: 2px solid black;
         height: 100px;
         width: 100px;
         background-color: aqua;
@@ -142,6 +150,67 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         text-align: center;
         color: gray;
       }
+      .teal {
+        background-color: teal;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+      }
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      /* . dot 는 class를 의미한다. 
+         #tomato = id =  "toamto"
+         .toamto = class = "tomato"
+      */
+      .aline_inline {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: teal;
+      }
+      /* inline-block은 inline을 block으로 인식하게 만듬 그래서 여러개 적용 시 옆으로 나열됨 
+       aber inline-block 은 많은 문제점이 있다. 
+       1. 디폴트 값에서 빈공간을 가짐...
+       2. 그리고 빈공간에 대한 값이 정해지지 않아서 크기가 바뀔 때 마다 매번 다름 > 간격을 맞추기가 어려웠음..
+       3. 하나씩 마추더라도... 화면의 크기에 따라서 일부 block이 하단으로 내려갈 수도 있음.
+       >> 말하자면 inline-block은 responsive Desigen(반응형 디자인)을 하지 않는다는 것
+      (해결방안)>> flexbox
+       */
+      .eltern_box {
+        height: 30vh;
+        /* 단위가 px가 아닌 vh를 사용하면 사용자의 화면기준으로 비율에 맞추어 크기가 변한다. */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* 화면이 매우 작아지면 안에 박스가 찌그러짐(no wrap).
+        >> 그것을 막기 위해 flex-wrap을 사용할 수 있다.    wrap */
+        flex-direction: row-reverse;
+        /* flex-direction은 자식 박스들을 왼쪽에서부터 놓는 것이 아닌 우측에서 부터 놓을 수 있게 한다.
+        ex box1, box2, box3  >>  box3, box2, box1
+        수평순서만이 아닌 수직도 가능. colum-reverse
+        */
+      }
+      .kind_box {
+        height: 40px;
+        width: 40px;
+        background-color: teal;
+      }
+      /* flexbox를 사용하려면 정렬되는것이 자식이지만 부모에게 명시해야 한다.  
+        justify-content를 이용해서 정렬하는 방식을 바꿔줄 수 있다.
+        (웹사이트 화면의 크기를 변경해도 자동으로 빈공간을 계산함)
+        flexbox main axis(디폴트:좌우) >> justify-content
+                cross axis(상하)      >> align-items로 설정가능
+        flexbox는 좌우간격만 설정하는 것이 아닌 상하간격도 설정한다.
+        main axis는 항상 수평은 아니다.. 변경 가능함.  
+        >> flex-direction row /column
+        row가 main axis 즉, 기본값으로 되어있고
+        colume으로 변경시 main axis가 상하로 바뀐다.
+        flexbox 사용 시 자식box도 부모 box가 될 수 있다 . 즉, 중첩 가능하다.
+      */
     </style>
     <!-- style태그는 css를 따로두지 않고 html파일에 추가하는 것 -->
 
@@ -155,12 +224,36 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
           <div id="third"></div>
         </div>
       </div>
+
+      <div class="aline_inline"></div>
+      <div class="aline_inline"></div>
+      <div class="aline_inline"></div>
+      <div class="aline_inline"></div>
+
+      <div class="eltern_box">
+        <div class="kind_box"></div>
+        <div class="kind_box"></div>
+        <div class="kind_box"></div>
+        <div class="kind_box"></div>
+      </div>
+
       <h1>Hello this is my webseite!</h1>
       <!-- 태그인 header는 div id="header"와 같은 의미이다. 예전에는 그렇게 사용했었다. 
         실질적으로는 div와 같은 의미지만 구조체를 더 쉽게 이해 가능하게 해준다.
         이러한 태그를 semantic 태그라고 한다.
         비슷한 예로 main, footer가 있다.-->
-    </header>
+      <span class="btn teal">hello</span>
+      <span class="btn tomato">hello</span>
+      <span class="btn teal">hello</span>
+      <span class="btn tomato">hello</span>
+      <span class="btn teal">hello</span>
+      <span class="btn tomato">hello</span>
+      <span class="btn teal">hello</span>
+      <!-- class는 고유한 id를 불필요하게 사용할 필요 없이 묶어주는 역할을 수행한다. 
+      id = tomato, tomato2, tomato3 >> class = tomato 
+        id는 유일하게 하나만 가질 수 있지만
+        class는 여러개 가질 수 있다.
+    --></header>
 
     <main>
       <!-- 태그인 main은 div id="main"와 같은 의미이다. 예전에는 그렇게 사용했었다. 본문을 의미한다 -->
