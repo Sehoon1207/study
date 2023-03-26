@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main () {
-    long double a, b;
-    scanf("%Lf %Lf",&a,&b);
-    printf("%Lf\n",a/b);
+    double a, b;
+    scanf("%lf %lf",&a,&b);
+    printf("%.9lf\n",a/b);
 }
