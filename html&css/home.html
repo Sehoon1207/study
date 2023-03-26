@@ -120,16 +120,29 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         height: 100px;
         width: 100px;
         background-color: aqua;
+        position: fixed;
+        /* position:fixed 는 화면에 해당 위치를 고정시켜서 스크롤해도 그 위치에 고정되어 있음 
+        디폴트는 fixed가 아닌 static.
+        position:absolute를 사용하면 body또는 가장 가까운 relative부모를 기준으로 이동시켜준다.
+        */
       }
+
       #second {
         height: 70px;
         width: 70px;
         background-color: coral;
+        position: relative;
+        top: -5px;
+        left: -5px;
       }
+      /* position: relative 는 현재 해당위치를 기준으로 잡아놓고 top left 등으로 움직이는 것이 가능 */
       #third {
         height: 40px;
         width: 40px;
         background-color: deeppink;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
       /* id를 가리키는 방법은  #(id이름)이다 */
 
@@ -161,7 +174,7 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         padding: 5px 10px;
         border-radius: 5px;
       }
-      /* . dot 는 class를 의미한다. 
+      /* . dot 는 class를 의미한다.
          #tomato = id =  "toamto"
          .toamto = class = "tomato"
       */
@@ -171,8 +184,8 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         width: 40px;
         background-color: teal;
       }
-      /* inline-block은 inline을 block으로 인식하게 만듬 그래서 여러개 적용 시 옆으로 나열됨 
-       aber inline-block 은 많은 문제점이 있다. 
+      /* inline-block은 inline을 block으로 인식하게 만듬 그래서 여러개 적용 시 옆으로 나열됨
+       aber inline-block 은 많은 문제점이 있다.
        1. 디폴트 값에서 빈공간을 가짐...
        2. 그리고 빈공간에 대한 값이 정해지지 않아서 크기가 바뀔 때 마다 매번 다름 > 간격을 맞추기가 어려웠음..
        3. 하나씩 마추더라도... 화면의 크기에 따라서 일부 block이 하단으로 내려갈 수도 있음.
@@ -180,7 +193,7 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
       (해결방안)>> flexbox
        */
       .eltern_box {
-        height: 30vh;
+        height: 10vh;
         /* 단위가 px가 아닌 vh를 사용하면 사용자의 화면기준으로 비율에 맞추어 크기가 변한다. */
         display: flex;
         justify-content: space-between;
@@ -199,17 +212,85 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         width: 40px;
         background-color: teal;
       }
-      /* flexbox를 사용하려면 정렬되는것이 자식이지만 부모에게 명시해야 한다.  
+      /* flexbox를 사용하려면 정렬되는것이 자식이지만 부모에게 명시해야 한다.
         justify-content를 이용해서 정렬하는 방식을 바꿔줄 수 있다.
         (웹사이트 화면의 크기를 변경해도 자동으로 빈공간을 계산함)
         flexbox main axis(디폴트:좌우) >> justify-content
                 cross axis(상하)      >> align-items로 설정가능
         flexbox는 좌우간격만 설정하는 것이 아닌 상하간격도 설정한다.
-        main axis는 항상 수평은 아니다.. 변경 가능함.  
+        main axis는 항상 수평은 아니다.. 변경 가능함.
         >> flex-direction row /column
         row가 main axis 즉, 기본값으로 되어있고
         colume으로 변경시 main axis가 상하로 바뀐다.
         flexbox 사용 시 자식box도 부모 box가 될 수 있다 . 즉, 중첩 가능하다.
+      */
+      div:first-child {
+        background-color: lightpink;
+      }
+      div:last-child {
+        background-color: lightblue;
+      }
+      div:nth-child(2),
+      div:nth-child(4) {
+        background-color: lightgray;
+      }
+      /* div:first-child{}와 같은 형식을 pseudo selector 라고 하며 
+      이건 html을 건드리지 않고(id를 설정한다거나 class를 만드는..)
+      해당 항목에 설정을 해줄 수 있다. 
+      2,4,6,8 연속되는 경우 even으로 설정도 가능
+      div:nth-child(even) {
+        background-color: lightgray;
+      }
+      div:nth-child(2n+1) {
+        background-color: lightgray;
+      }
+      */
+      div span {
+        background-color: teal;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      div p span {
+        color: white;
+      }
+      /* 
+      p 안에 있는 span에 효과를 줄 수 있음, 중복해서 계속 입력가능 
+      *div span 과 div > span 의 차이는 
+      div span: div아래에 모든 자식들의 span을 가리키는지
+      div > span: div 바로 아래단계의 자식들의 span 만을 가리키는지
+      이다.
+      div + span : 인 경우는 div 바로 다음에 붙어서 오는 형제인 span에 해당한다.
+      div ~ span : 인 경우는 div 바로 다음에 붙지 않아도 뒤에 있는 형제인 span에 해당한다.
+      */
+
+      input:required {
+        border-style: solid;
+        border-color: teal;
+      }
+      /* required인 항목을 모두 수정 */
+      input[placeholder="password"] {
+        background-color: lightpink;
+      }
+      input[placeholder~="name"] {
+        background-color: lightpink;
+      }
+      input::placeholder {
+        color: lightgreen;
+      }
+      /* palceholder에 name이 들어간 모든 항목을 수정해줌 */
+      /* ** pseudo elelment 
+       ::placeholder  박스안의 플레이스 홀더 글자 스타일 변경시 사용 대신 :: 유의
+      */
+      p::selection {
+        color: white;
+        background-color: lightcoral;
+      }
+      /* 텍스트를 마우스로 긁을 시 색이 변경 
+      ::first-letter
+      ::first-line   등이 있다.
       */
     </style>
     <!-- style태그는 css를 따로두지 않고 html파일에 추가하는 것 -->
@@ -283,25 +364,30 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         </div>
 
         <div>
-          <label for="first-name">First Name</label>
-          <input id="first-name" required placeholder="Name" type="text" />
+          <label for="First name">First Name</label>
+          <input id="First name" required placeholder="Name" type="text" />
           <!-- required는 무조건 채워야 하도록 만듬-->
         </div>
 
         <div>
-          <label for="Lastname">Last Name</label>
-          <input placeholder="Lastname" disable type="text" />
+          <label for="Last name">Last Name</label>
+          <input placeholder="Last name" disable type="text" />
           <!-- disable은 수정불가로 만듬-->
         </div>
 
         <div>
-          <label for="username">Username&nbsp;</label>
-          <input placeholder="username" type="text" />
+          <label for="user name">Username&nbsp;</label>
+          <input placeholder="user name" type="text" />
         </div>
 
         <div>
           <label for="password">Password&nbsp;&nbsp;</label>
-          <input placeholder="password" minlength="10" type="password" />
+          <input
+            placeholder="password"
+            required
+            minlength="10"
+            type="password"
+          />
           <!-- minlength 최소 글자수 -->
         </div>
 
@@ -369,7 +455,16 @@ ex) 이 텍스트는 녹색이고 이 이미지는 240픽셀 240픽셀이야....
         <p>Greetings, on and all!</p>
       </dialog>
 
-      <p>길게 텍스트를 입력하는 곳입니당</p>
+      <div>
+        <span>Einführung</span>
+        <p>
+          Hier ist meine <span>Webseite</span>. Es fasst verschiedene Werke und
+          Schritte zusammen, die gegangen wurden. Wenn Sie neue
+          <span>Ideen</span> haben, lassen Sie es mich wissen und wir werden es
+          gemeinsam versuchen.
+        </p>
+      </div>
+
       <!-- p : paragraph -->
       <pre>텍스트가 약간 달라집니다.</pre>
       <p>My name is <abbr title="Sehoon Oh">SO</abbr></p>
