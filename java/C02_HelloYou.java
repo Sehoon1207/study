@@ -8,7 +8,7 @@ main() 내부에 Hello someName!을 출력하는 문을 추가하고 someName을
 */
 
 
-public class HelloYou {
+public class C02_HelloYou {
     public static void main(String[] args) {
         System.out.println("Hello Maria!");
     }
