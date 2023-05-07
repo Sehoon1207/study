@@ -6,6 +6,13 @@ Store 클래스에 빈 incrementPrice() 메서드를 추가했습니다.
 이중 매개 변수 priceToAdd를 사용합니다.
 incrementPrice() 메서드 내에서 newPrice라는 변수를 만듭니다.
 이를 double로 선언하고 가격에 priceToAdd를 더한 값과 같게 설정합니다.
+
+2.
+incrementPrice() 내부에서 인스턴스 필드 가격을 newPrice로 설정합니다!
+
+3.
+main() 메서드에서 레모네이드 가판대 가격을 1.5만큼 올립니다.
+그런 다음, lemonadeStand.price를 인쇄하여 어떻게 변경되었는지 확인하십시오!
  */
 
 public class C42_Store {
@@ -21,13 +28,15 @@ public class C42_Store {
 
     // increase price method
     public void increasePrice(double priceToAdd){
-
+        double newPrice = price + priceToAdd;
+        price = newPrice;
     }
 
     // main method
     public static void main(String[] args) {
         C42_Store lemonadeStand = new C42_Store("Lemonade", 3.75);
-
+        lemonadeStand.increasePrice(1.5);
+        System.out.println(lemonadeStand.price);
     }
 }
 
