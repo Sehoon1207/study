@@ -38,7 +38,16 @@ public class C50_Order {
     public double calculateShipping() {
         double shippingCost;
         // declare switch statement here
-        
+        switch (shipping){
+            case "Regular":
+                shippingCost = 0;
+                break;
+            case "Express":
+                shippingCost = 1.75;
+                break;
+            default:
+                shippingCost = .5;
+        }
 
         return shippingCost;
     }
