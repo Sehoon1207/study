@@ -1,0 +1,54 @@
+body {
+  display: block;
+  text-align: center;
+  background-color: #ededed;
+}
+
+.outline {
+  width: 60%;
+  height: 100%;
+  margin: 0 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.outline>div:first-child {
+  background-color: tomato;
+}
+
+.outline>div:nth-child(2) {
+  background-color: teal;
+}
+
+.outline>div:nth-child(3) {
+  background-color: burlywood;
+}
+
+.outline>div:nth-child(4) {
+  background-color: thistle;
+}
+
+.elementBox {
+  text-align: left;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  border: 3px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.textBox {
+  width: 290px;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+}
+
+.textBox span {
+  display: block;
+}

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 320px;
+  height: 760px;
+  background-color: #FFCE32;
+  border: 6px solid black;
+}
+
+
+/* ----------header & nav part-------------- */
+
+header {
+  height: 20px;
+  padding: 20px 5px 40px 5px;
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__column {
+  width: 33%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav :first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav :nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.nav :last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__column button {
+  background-color: #FFCE32;
+  border: 0px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+
+
+/* ----------main part-------------- */
+
+
+
+
+main {
+  padding: 20px;
+  padding-top: 40px;
+  height: 620px;
+  background-color: white;
+}
+
+main>span {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+.searchbooks {
+  position: fixed;
+  top: 80px;
+  width: 260px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px;
+  color: lightgray;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px lightgray;
+}
+
+.searchbooks :last-child {
+  position: relative;
+}
+
+.searchbooks input {
+  height: 20px;
+  width: 100%;
+  border: 0;
+
+}
+
+.searchbooks button {
+  position: absolute;
+  border: 0;
+  background-color: white;
+  color: lightgray;
+  right: 0;
+}
+
+
+
+/* ----------Book of the day part-------------- */
+
+.maintitleBox {
+  width: 280px;
+  height: 180px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+}
+
+
+.maintitleBox__imgBox {
+  width: 110px;
+  height: 160px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.maintitleBox__column {
+  padding: 2px;
+}
+
+.maintitleBox__column span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.maintitleBox__column p {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+  color: lightgray;
+}
+
+.maintitleBox__column i {
+  font-size: 12px;
+  color: #FFCE32;
+}
+
+.maintitleBox__column i :last-child {
+  color: lightgray;
+}
+
+.maintitleBox__column__tags {
+  margin-bottom: 20px;
+}
+
+
+.maintitleBox__column__tags span {
+  height: 20px;
+  font-size: 12px;
+  padding: 3px 8px;
+  display: inline-block;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.maintitleBox__column__bookmark {
+  width: 155px;
+  height: 30px;
+  border-radius: 50%;
+  /* background-color: #FFCE32; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.maintitleBox__column__bookmark i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFCE32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.maintitleBox__column__bookmark>button {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: lightgray;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* ----------Top Adventures part-------------- */
+
+
+
+.topBooks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  overflow-y: hidden;
+}
+
+.topBooks::-webkit-scrollbar {
+  display: none;
+  /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+
+.topBooks__book {
+  width: 70px;
+  height: 120px;
+  display: block;
+  margin-right: 15px;
+}
+
+.topBooks button {
+  width: 70px;
+  height: 100px;
+  padding: 0px;
+  border-radius: 10px;
+  border: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.topBooks__book__stars {
+  font-size: 3px;
+  color: #FFCE32;
+}
+
+.topBooks__book__stars :last-child {
+  font-size: 3px;
+  color: lightgray;
+}
+
+
+
+
+
+
+
+
+/* ----------Popular authors part-------------- */
+
+.authorBox {
+  margin-top: 10px;
+}
+
+.authorBox__content {
+  display: flex;
+}
+
+.authorBox__content__colorbox1 {
+  width: 110px;
+  height: 130px;
+  margin-right: 15px;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+  overflow: hidden;
+}
+
+.authorBox__content__textbox {
+  width: 155px;
+  height: 130px;
+  display: block;
+}
+
+.authorBox__content__textbox span {
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.authorBox__content__textbox p {
+  font-size: 12px;
+  margin-top: 0;
+  color: lightgray;
+}

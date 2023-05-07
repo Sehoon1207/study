@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  /* width: 1200px;
+  height: 900px; */
+  background-color: #F7F7F7;
+  /* border: 6px solid black; */
+}
+
+
+/* ----------nav part-------------- */
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__column {
+  width: 33%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav :first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav :nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.nav :last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__column button {
+  background-color: white;
+  border: 0px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+
+
+/* ----------main part-------------- */
+
+
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main>span {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+
+
+/* ----------playlist part-------------- */
+
+.playlist {
+  width: 320px;
+  height: 750px;
+  /* border: 1px solid black; */
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0px 0px 30px lightgray;
+  margin: 60px;
+  padding: 20px;
+
+}
+
+.playlist__artist {
+  width: 280px;
+  height: 330px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.playlist__artist__profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px #546dab;
+  margin-bottom: 40px;
+}
+
+.playlist__artist span {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.playlist__artist p {
+  font-weight: 800;
+  color: #ABABAB;
+  margin-top: 5px;
+
+}
+
+.playlist__artist__buttons>button {
+  width: 100px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 20px 5px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px lightgray;
+  border: 0px;
+
+}
+
+.playlist__artist__buttons__shuffle {
+  background-color: #222222;
+  color: white;
+}
+
+.playlist__artist__buttons__like {
+  background-color: white;
+  color: gray;
+  align-items: center;
+}
+
+.playlist__artist__buttons__heart {
+  color: #222222;
+  font-size: 18px;
+}
+
+/* ===================music selected start============== */
+
+.playlist__list__musicSelected {
+  width: 280px;
+  height: 66px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  display: flex;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #ededed;
+}
+
+.playlist__list__musicSelected p {
+  margin: 2px 0px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #ABABAB;
+}
+
+.playlist__list__musicSelected span {
+  font-weight: 800;
+  color: #222222;
+}
+
+.playlist__list__musicSelected button {
+  width: 20%;
+  border: 0;
+  background-color: white;
+  font-size: 16px;
+  color: #ABABAB;
+}
+
+/* ===================music selected end================ */
+
+.playlist__list__music {
+  width: 280px;
+  height: 66px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  display: flex;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  background-color: white;
+}
+
+.playlist__list__music__cover {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+
+
+.playlist__list__music__text {
+  width: 60%;
+}
+
+
+.playlist__list__music p {
+  margin: 2px 0px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #ABABAB;
+}
+
+.playlist__list__music span {
+  font-weight: 800;
+  color: #222222;
+}
+
+.playlist__list__music button {
+  width: 20%;
+  border: 0;
+  background-color: white;
+  font-size: 16px;
+  color: #ABABAB;
+}
+
+.playlist__miniplayer {
+  width: 280px;
+  height: 60px;
+  display: flex;
+  background-color: #222222;
+  border-radius: 75px;
+  padding: 10px 25px;
+  margin-top: 0px;
+  box-shadow: 0px 0px 15px gray;
+}
+
+.playlist__miniplayer__text {
+  width: 60%;
+}
+
+.playlist__miniplayer__text p {
+  color: #ABABAB;
+  margin: 0;
+}
+
+.playlist__miniplayer__text span {
+  color: white;
+}
+
+.playlist__miniplayer__buttons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist__miniplayer__buttons button {
+  border: 0;
+  background-color: #222222;
+  color: white;
+}
+
+.playlist__miniplayer__buttons :nth-child(2) {
+  font-size: 20px;
+}
+
+/* ----------playnow part-------------- */
+
+.playnow {
+  width: 320px;
+  height: 750px;
+  /* border: 1px solid black; */
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0px 0px 30px lightgray;
+  margin: 60px;
+  padding: 20px;
+}
+
+.playnow__mainImage {
+  width: 230px;
+  height: 230px;
+  margin: 60px 30px 30px 30px;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 10px 30px #EDB3D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.playnow__text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playnow__text span {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.playnow__text p {
+  font-weight: 800;
+  color: #ABABAB;
+  margin-top: 5px;
+}
+
+.playnow__progressBar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playnow__progressBar p {
+  font-size: 10px;
+  font-weight: 800;
+  color: #ABABAB;
+  margin: 0;
+}
+
+#progresBar {
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #e0e0e0;
+}
+
+#progresBar::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 2px;
+}
+
+#progresBar::-webkit-progress-value {
+  background-color: #222222;
+  border-radius: 2px;
+}
+
+.playnow__buttons {
+  margin: 60px 0px 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.playnow__buttons button {
+  background-color: white;
+  border: 0;
+  font-size: 18px;
+}
+
+.playnow__buttons button:first-child {
+  color: #e0e0e0;
+}
+
+.playnow__buttons button:nth-last-child(2) {
+  color: #222222;
+}
+
+.playnow__buttons button:nth-last-child(3) {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #222222;
+  color: white;
+  box-shadow: 0px 0px 15px gray;
+}
+
+.playnow__buttons button:nth-last-child(4) {
+  color: #222222;
+}
+
+
+.playnow__buttons button:last-child {
+  color: #e0e0e0;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <main>
+
+    <!-- playlist screen -->
+    <div class="playlist">
+      <div class="nav">
+        <div class="nav__column">
+          <button><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="nav__column">
+          <span></span>
+        </div>
+        <div class="nav__column">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <!-- artist -->
+      <div class="playlist__artist">
+
+        <div class="playlist__artist__profile">
+          <img src="https://www.aceshowbiz.com/images/photo/taylor_swift.jpg" height="150%">
+        </div>
+
+        <span>Taylor Swift</span>
+        <p>singer, songwriter</p>
+
+        <div class="playlist__artist__buttons">
+          <button class="playlist__artist__buttons__shuffle">
+            Shuffle
+          </button>
+          <button class="playlist__artist__buttons__like">
+            <i class="fas fa-heart playlist__artist__buttons__heart"></i>
+            212 917
+          </button>
+        </div>
+      </div>
+
+
+      <!-- music list -->
+      <div class="playlist__list">
+        <!-- 1. music selected-->
+        <div class="playlist__list__musicSelected">
+          <div class="playlist__list__music__cover">
+            <img src="https://m.media-amazon.com/images/I/71RfNE3rIyL._SL1500_.jpg" height="100%">
+          </div>
+          <div class="playlist__list__music__text">
+            <p>Taylor Swift</p>
+            <span>Lover</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <!-- 2. music -->
+        <div class="playlist__list__music">
+          <div class="playlist__list__music__cover">
+            <img src="https://static.wikia.nocookie.net/taylor-swift/images/8/8f/Taylor_Swift_-_Speak_Now_cover.png"
+              height="100%">
+          </div>
+          <div class="playlist__list__music__text">
+            <p>Taylor Swift</p>
+            <span>The Story of Us</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <!-- 3. music -->
+        <div class="playlist__list__music">
+          <div class="playlist__list__music__cover">
+            <img
+              src="https://people.com/thmb/-CFk2SUsPbgYeOcrtvMGO35IWOc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/taylor-swift-albums-1-93026ca98408417097660e117a10a6a9.jpg"
+              height="100%">
+          </div>
+          <div class="playlist__list__music__text">
+            <p>Taylor Swift</p>
+            <span>Picture to Burn</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <!-- 4. music -->
+        <div class="playlist__list__music">
+          <div class="playlist__list__music__cover">
+            <img src="https://m.media-amazon.com/images/I/71RfNE3rIyL._SL1500_.jpg" height="100%">
+          </div>
+          <div class="playlist__list__music__text">
+            <p>Taylor Swift</p>
+            <span>Lover</span>
+          </div>
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+      </div>
+
+
+      <!-- miniplayer -->
+      <div class="playlist__miniplayer">
+
+        <div class="playlist__miniplayer__text">
+          <p>Taylor Swift</p>
+          <span>Lover</span>
+        </div>
+
+        <div class="playlist__miniplayer__buttons">
+          <button>
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button>
+            <i class="fas fa-step-forward"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- playnow screen-->
+    <div class="playnow">
+
+      <div class="nav">
+        <div class="nav__column">
+          <button><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="nav__column">
+          <span></span>
+        </div>
+        <div class="nav__column">
+          <button><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+      </div>
+
+      <div class="playnow__mainImage">
+        <img src="https://pbs.twimg.com/media/D8-LieAWsAAaiTS.jpg:large" width="100%">
+      </div>
+
+      <div class="playnow__text">
+        <span>Lover</span>
+        <p>Taylor Swift</p>
+      </div>
+
+      <div class="playnow__progressBar">
+        <p>1:56</p>
+        <p>2:21</p>
+      </div>
+      <progress id="progresBar" max="100" value="65"></progress>
+
+      <div class="playnow__buttons">
+        <button><i class="fas fa-retweet"></i> </button>
+        <button><i class="fas fa-step-backward"></i> </button>
+        <button><i class="fas fa-play"></i>
+        </button>
+        <button><i class="fas fa-step-forward"></i> </button>
+        <button><i class="fas fa-random"></i> </button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

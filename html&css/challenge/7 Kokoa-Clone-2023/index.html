@@ -1,0 +1,64 @@
+<!-- 시작할 때 ! 만 입력하고 엔터~ 바로 양식나옴 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- link:css 라고 입력하면 쉽게 자동완성됨 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+      <!-- class 이름이 길더라도 명확한게 중요함 -->
+      <!-- BEM(Block Element Modifier) 라고 찾으면 일반적인 규칙이 있음 
+            예) 자식의 경우 btn__etwas
+                수정사항의 경우 btn--etwas 
+        -->
+      <!-- id보다는 class로 일괄 적용해야 나중에 안 햇갈린다. -->
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If tou have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <!-- action은 어떤 페이지로 data를 보낼 건지 지정 
+      method는 2가지 방식 중 하나를 사용
+        post  백엔드 서버에 정보를 전송하는 방식.. 아직 서버가 없음
+        get   보안에 취약함. url에 포함되어도 상관없는 정보들을 보내는 것 
+      ** post를 써도 현재 작업환경에서는 동일하게 작동하지만 다른곳에서는 작동하지 x
+      -->
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="password" />
+      <input type="submit" value="Log In" />
+      <a href="#">FInd Kokoa Account or Password</a>
+      <!-- 이 link하나만을 위해서 id나 class를 또 만들면 너무 많아지기 때문에 form에 넣어버림 -->
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big T_T </span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 스크립트는 항상 마지막에 body 태그를 닫기 직전에 있어야 함 -->
+  </body>
+</html>

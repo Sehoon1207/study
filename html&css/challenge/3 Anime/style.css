@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #6ABCBE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animationbox-circle {
+  width: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: rotateCircle 1s ease-in-out infinite;
+}
+
+.animationbox-bar {
+  width: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+@keyframes increase-height-scale {
+  0% {
+    transform: scaleY(1);
+  }
+
+  25% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  75% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+
+}
+
+.animationbox-bar>div {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  /* animation: increase-height-scale 0.5s ease-in-out infinite; */
+}
+
+.animationbox__bar1 {
+  animation: increase-height-scale 1s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.animationbox__bar2 {
+  animation: increase-height-scale 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.animationbox__bar3 {
+  animation: increase-height-scale 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.animationbox__bar4 {
+  animation: increase-height-scale 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.animationbox__bar5 {
+  animation: increase-height-scale 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
