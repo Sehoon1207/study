@@ -1,0 +1,19 @@
+HTML stands for HyperText Markup Language:
+
+- A markup language is a computer language that defines the structure and presentation of raw text.
+- In HTML, the computer can interpret raw text that is wrapped in HTML elements.
+- HyperText is text displayed on a computer or device that provides access to other text through 
+    links, also known as hyperlinks. You probably clicked on a couple of hyperlinks on your way 
+    to this Codecademy course.
+
+ex)
+
+<p>Hello World!</p>
+
+An opening tag (<p>)
+The content (“Hello World!” text)
+A closing tag (</p>)
+
+-A tag and the content between it is called an HTML element. 
+-There are many tags that we can use to organize and display text and other types of content, 
+    like images.

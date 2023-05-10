@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button:active {
+        background-color: tomato;
+      }
+      /* 클릭하면 색이 변함 */
+      button:hover {
+        background-color: teal;
+      }
+      /* 마우스를 가져가면 색이 변함 */
+      button:focus {
+        background-color: teal;
+      }
+      /* focus는 키보드로 선택되었을 때 변경 */
+      a:visited {
+        color: tomato;
+      }
+      form {
+        border: 2px solid;
+        display: flex;
+        flex-direction: column;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      /* :focus-within 은 focused인 자식을 가진 부모 엘리먼트에 적용 */
+      form:hover input {
+        background-color: lightgoldenrodyellow;
+      }
+      /* form이 hover상태가 되면(마우스포인터가 올라간 상태) input이 변한다 */
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <button>Hello</button>
+      </div>
+      <label for="user name">Username&nbsp;</label>
+      <input placeholder="user name" type="text" />
+      <label for="password">Password&nbsp;&nbsp;</label>
+      <input placeholder="password" required minlength="10" type="password" />
+      <a href="http://apple.com">Go to apple</a>
+    </form>
+  </body>
+</html>
