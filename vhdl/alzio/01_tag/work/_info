@@ -1,0 +1,216 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/code/TU_Berlin/06_HWPTI/01_Blatt
+Eand_gate
+Z0 w1684652050
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z3 dC:/code/study/vhdl/alzio/01_tag
+Z4 8C:/code/study/vhdl/alzio/01_tag/src/and_gate.vhd
+Z5 FC:/code/study/vhdl/alzio/01_tag/src/and_gate.vhd
+l0
+L25 1
+VoFWFVTb=XZ_Bfzh_DkWiH0
+!s100 dILb]hM]F_9QBK:lD?FE:3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1684663988
+!i10b 1
+Z8 !s108 1684663988.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/and_gate.vhd|
+Z10 !s107 C:/code/study/vhdl/alzio/01_tag/src/and_gate.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+DEx4 work 8 and_gate 0 22 oFWFVTb=XZ_Bfzh_DkWiH0
+!i122 0
+l32
+L30 5
+V?d7T8KzRIP3U[AjKCB@o>3
+!s100 dP?Czioz5d@f>>72FaYj91
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Egate_st
+Z13 w1684657229
+R1
+R2
+!i122 1
+R3
+Z14 8C:/code/study/vhdl/alzio/01_tag/src/Gate_St.vhd
+Z15 FC:/code/study/vhdl/alzio/01_tag/src/Gate_St.vhd
+l0
+L4 1
+V6OVY5Zk2L2c:YhA[SQe0A0
+!s100 >>M?AJd=0[ghZmgH7Y3Ej0
+R6
+32
+Z16 !s110 1684663989
+!i10b 1
+Z17 !s108 1684663989.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/Gate_St.vhd|
+Z19 !s107 C:/code/study/vhdl/alzio/01_tag/src/Gate_St.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 7 gate_st 0 22 6OVY5Zk2L2c:YhA[SQe0A0
+!i122 1
+l32
+L12 26
+VQA1PQeg:1GB_]XbFbAcao1
+!s100 WHnT_f^bzJnQd0`d?ddM>0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Egates_tb
+Z20 w1684664043
+R1
+R2
+!i122 6
+R3
+Z21 8C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd
+Z22 FC:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd
+l0
+L4 1
+V3^>@^W`nKnkdTmbc=62^=2
+!s100 ?FY^G4Vac`g_6Z`_>47Y]1
+R6
+32
+Z23 !s110 1684664089
+!i10b 1
+Z24 !s108 1684664089.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
+!s107 C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 8 gates_tb 0 22 3^>@^W`nKnkdTmbc=62^=2
+!i122 6
+l26
+L7 56
+VR`GkKN9PE^IgHWD9=092b0
+!s100 UaRez6hajQ5eJ3kGKH[Na1
+R6
+32
+R23
+!i10b 1
+R24
+R25
+Z26 !s107 C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
+!i113 1
+R11
+R12
+Eor_gate
+Z27 w1684653026
+R1
+R2
+!i122 3
+R3
+Z28 8C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd
+Z29 FC:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd
+l0
+L4 1
+VfZ<aRURdYPdF0b^d?ZUml2
+!s100 :ZZQS>Idzo9MEg9Kfc?QW2
+R6
+32
+R16
+!i10b 1
+R17
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd|
+Z31 !s107 C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 7 or_gate 0 22 fZ<aRURdYPdF0b^d?ZUml2
+!i122 3
+l12
+L10 12
+VT1oEIa=VKZbYGgR15<h=X2
+!s100 R@:gYJGkb2DEaMoo>Dlmf1
+R6
+32
+R16
+!i10b 1
+R17
+R30
+R31
+!i113 1
+R11
+R12
+Exor_gate
+Z32 w1684653261
+R1
+R2
+!i122 4
+R3
+Z33 8C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd
+Z34 FC:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd
+l0
+L4 1
+VS?Gmk[kKdO6@l9n2NX8Oz0
+!s100 8CJU[[?j7nKkll<?g<ED[0
+R6
+32
+R16
+!i10b 1
+R17
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd|
+Z36 !s107 C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 8 xor_gate 0 22 S?Gmk[kKdO6@l9n2NX8Oz0
+!i122 4
+l11
+L9 5
+Vo06dT:MzCzlDC<H=8lj`90
+!s100 aVZN^Y_>dHcnli_j1nj6g3
+R6
+32
+R16
+!i10b 1
+R17
+R35
+R36
+!i113 1
+R11
+R12

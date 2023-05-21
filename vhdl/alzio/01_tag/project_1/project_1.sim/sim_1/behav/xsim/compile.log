@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/code/study/vhdl/alzio/01_tag/src/Gate_St.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Gate_st'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/code/study/vhdl/alzio/01_tag/src/and_gate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'and_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'or_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Gates_tb'
