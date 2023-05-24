@@ -95,7 +95,7 @@ Egates_tb
 Z20 w1684664043
 R1
 R2
-!i122 6
+!i122 7
 R3
 Z21 8C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd
 Z22 FC:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd
@@ -105,41 +105,41 @@ V3^>@^W`nKnkdTmbc=62^=2
 !s100 ?FY^G4Vac`g_6Z`_>47Y]1
 R6
 32
-Z23 !s110 1684664089
+Z23 !s110 1684683068
 !i10b 1
-Z24 !s108 1684664089.000000
+Z24 !s108 1684683068.000000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
-!s107 C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
+Z26 !s107 C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R1
 R2
-DEx4 work 8 gates_tb 0 22 3^>@^W`nKnkdTmbc=62^=2
-!i122 6
+Z27 DEx4 work 8 gates_tb 0 22 3^>@^W`nKnkdTmbc=62^=2
+!i122 7
 l26
-L7 56
-VR`GkKN9PE^IgHWD9=092b0
-!s100 UaRez6hajQ5eJ3kGKH[Na1
+Z28 L7 56
+Z29 VR`GkKN9PE^IgHWD9=092b0
+Z30 !s100 UaRez6hajQ5eJ3kGKH[Na1
 R6
 32
 R23
 !i10b 1
 R24
 R25
-Z26 !s107 C:/code/study/vhdl/alzio/01_tag/src/Gates_tb.vhd|
+R26
 !i113 1
 R11
 R12
 Eor_gate
-Z27 w1684653026
+Z31 w1684653026
 R1
 R2
 !i122 3
 R3
-Z28 8C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd
-Z29 FC:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd
+Z32 8C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd
+Z33 FC:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd
 l0
 L4 1
 VfZ<aRURdYPdF0b^d?ZUml2
@@ -149,8 +149,8 @@ R6
 R16
 !i10b 1
 R17
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd|
-Z31 !s107 C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd|
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd|
+Z35 !s107 C:/code/study/vhdl/alzio/01_tag/src/or_gate.vhd|
 !i113 1
 R11
 R12
@@ -168,19 +168,19 @@ R6
 R16
 !i10b 1
 R17
-R30
-R31
+R34
+R35
 !i113 1
 R11
 R12
 Exor_gate
-Z32 w1684653261
+Z36 w1684653261
 R1
 R2
 !i122 4
 R3
-Z33 8C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd
-Z34 FC:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd
+Z37 8C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd
+Z38 FC:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd
 l0
 L4 1
 VS?Gmk[kKdO6@l9n2NX8Oz0
@@ -190,8 +190,8 @@ R6
 R16
 !i10b 1
 R17
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd|
-Z36 !s107 C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd|
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd|
+Z40 !s107 C:/code/study/vhdl/alzio/01_tag/src/xor_gate.vhd|
 !i113 1
 R11
 R12
@@ -209,8 +209,8 @@ R6
 R16
 !i10b 1
 R17
-R35
-R36
+R39
+R40
 !i113 1
 R11
 R12
